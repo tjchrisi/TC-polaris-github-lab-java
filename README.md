@@ -30,9 +30,9 @@ This repository contains everything you need to complete the lab except for the 
 
 ![image](https://github.com/user-attachments/assets/f9581fd8-51cc-4f92-8aa8-5b064820610e)
 
-   - confirm that Actions permissions are set to "Allow all actions and reusuable workflows"
-   - set Workflow permissions to "Read and write permissions"
-   - click the box to "Allow GitHub Actions to create and approve pull requests"
+   - **confirm that Actions permissions are set to "Allow all actions and reusuable workflows"**
+   - **set Workflow permissions to "Read and write permissions"**
+   - **click the box to "Allow GitHub Actions to create and approve pull requests"**
    - click save
 
 3. Go to GitHub → Project → Settings → Secrets and Variables → Actions and add the following variables:
@@ -58,7 +58,7 @@ analyze:
 
 4. We are now going to create a new GitHub Action workflow. Below you will see a template that you can copy and paste and use as your workflow. This utilizes the Black Duck Security Scan GitHub Action.  
 
-   The code below will works as is, but for our lab we need to make a change.  Under ### SCANNING: Optional fields, change <ins>**polaris_application_name**</ins> value to match the application name you created in the previous labs. Leave the project name as-is and this will add it to your application as a second project in Polaris.
+   The code below will works as is, but for our lab we need to make a change.  Under ### SCANNING: Optional fields, change <ins>**polaris_application_name**</ins> value to match the application name (**be careful not to use the project name**) you created in the previous labs. Leave the project name as-is and this will add it to your application as a second project in Polaris.
 
    Go to, GitHub → Project → Actions → New Workflow → Setup a workflow yourself
 
