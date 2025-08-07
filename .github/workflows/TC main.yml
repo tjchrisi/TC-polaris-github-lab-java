@@ -1,0 +1,19 @@
+name: Security Scan
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run Black Duck Security Scan
+        uses: blackduck-inc/black-duck-security-scan@v2
+        with:
+          polaris_assessment_types: SCA,SAST
+          mark_build_status: failure
+        env:
