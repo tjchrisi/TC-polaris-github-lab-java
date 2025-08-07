@@ -19,4 +19,4 @@ jobs:
         env:
           blackducksca_url: ${{ secrets.BLACKDUCK_SCA_URL }}  # Add this line!
           # Optional: Add other secrets (e.g., tokens)
-          # blackducksca_token: ${{ secrets.BLACKDUCK_SCA_TOKEN }}
+          blackducksca_token: ${{ secrets.BLACKDUCK_SCA_TOKEN }}
