@@ -1,0 +1,11 @@
+ Duck Security Scan
+  uses: blackduck-inc/black-duck-security-scan@v2
+  with:
+    polaris_assessment_types: SCA,SAST
+    mark_build_status: failure
+  env:
+    # Use the URL variable that matches your tool:
+    blackducksca_url: ${{ secrets.BLACKDUCK_URL }}   # For Black Duck SCA
+    # polaris_server_url: ${{ secrets.BLACKDUCK_URL }}  # For Polaris
+    # coverity_url: ${{ secrets.BLACKDUCK_URL }}        # For Coverity
+    # srm_url: ${{ secrets.BLACKDUCK_URL }}            # For SRM
