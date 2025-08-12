@@ -1,5 +1,5 @@
  Duck Security Scan
-  uses: blackduck-inc/black-duck-security-scan@v2
+  uses: blackduck-inc/black-duck-security-scan@v2.0.0
   with:
     polaris_assessment_types: SCA,SAST
     mark_build_status: failure
